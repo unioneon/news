@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111116">
+<title>ADOBE MAX 2026 · Interactive Edition</title>
+<script src="https://telegram.org/js/telegram-web-app.js?62"></script>
+<style>
+:root{--bg:#0d0d12;--panel:#17171f;--panel2:#1d1d27;--text:#f5f3f7;--muted:#aaa7b4;--line:rgba(255,255,255,.10);--red:#ff453a;--orange:#ff8a35;--violet:#a78bfa;--green:#55d6a5;--blue:#78b7ff;--yellow:#f7cb69;--shadow:0 18px 55px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 480px at 80% -8%,rgba(255,69,58,.18),transparent 65%),radial-gradient(700px 500px at -10% 22%,rgba(167,139,250,.12),transparent 68%),var(--bg);color:var(--text);font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}a{color:#ff9b8e;text-decoration:none}a:hover{text-decoration:underline;color:#ffc0b6}.wrap{max-width:1120px;margin:auto;padding:26px 22px 70px}.topline{display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--muted);font-size:12px;letter-spacing:.13em;text-transform:uppercase}.brand{display:flex;align-items:center;gap:9px;font-weight:800;color:#fff}.adobe-mark{width:25px;height:25px;display:inline-grid;place-items:center;background:linear-gradient(135deg,#ff4b3e,#ff8c35);border-radius:7px;font-size:15px;color:#fff;letter-spacing:0}.hero{position:relative;overflow:hidden;margin:28px 0 22px;padding:54px 48px 42px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(125deg,rgba(255,69,58,.19),rgba(167,139,250,.13) 52%,rgba(255,255,255,.035)),#17151d;box-shadow:var(--shadow)}.hero:after{content:"MAX";position:absolute;right:-18px;bottom:-72px;font-size:clamp(130px,24vw,270px);font-weight:950;line-height:1;color:rgba(255,255,255,.035);letter-spacing:-.09em;pointer-events:none}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#ffb0a5;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#ff665b;box-shadow:0 0 15px #ff665b}.hero h1{max-width:800px;margin:16px 0 14px;font-size:clamp(38px,6.3vw,72px);line-height:.99;letter-spacing:-.055em}.hero h1 span{background:linear-gradient(90deg,#ff725f,#ffbd6e 55%,#c4a7ff);color:transparent;background-clip:text}.lead{max-width:700px;color:#d2ced9;font-size:18px}.meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px}.pill{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(0,0,0,.18);color:#e8e4ed;font-size:12px}.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:26px;align-items:start}.toc{position:sticky;top:18px;padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(23,23,31,.78);backdrop-filter:blur(12px)}.toc strong{display:block;margin-bottom:10px;font-size:11px;letter-spacing:.13em;color:var(--muted);text-transform:uppercase}.toc a{display:block;padding:7px 8px;border-radius:8px;color:#d3cfda;font-size:13px}.toc a:hover{background:rgba(255,255,255,.06);text-decoration:none}.content{min-width:0}.intro{padding:20px 23px;margin-bottom:22px;border-left:3px solid var(--orange);border-radius:0 15px 15px 0;background:rgba(255,255,255,.045);color:#d8d4de}.section{margin:30px 0 36px;scroll-margin-top:20px}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin-bottom:15px}.section h2{margin:0;font-size:clamp(25px,3.5vw,36px);letter-spacing:-.04em;line-height:1.1}.section-kicker{margin:0 0 6px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.section-desc{margin:8px 0 0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{padding:19px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));transition:transform .18s ease,border-color .18s ease}.card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.2)}.card.full{grid-column:1/-1}.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}.card h3{margin:0;font-size:17px;letter-spacing:-.02em}.card p{margin:7px 0 0;color:#c8c4cf;font-size:14px}.icon{width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border-radius:11px;background:rgba(255,255,255,.07);font-size:17px}.status{display:inline-block;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}.ga{background:rgba(85,214,165,.13);color:#7ce6bc}.beta{background:rgba(247,203,105,.13);color:#f7d58a}.preview{background:rgba(120,183,255,.13);color:#9ccaff}.private{background:rgba(167,139,250,.16);color:#c6b5ff}.note{margin-top:14px;padding:14px 16px;border:1px solid rgba(247,203,105,.22);border-radius:13px;background:rgba(247,203,105,.06);color:#e5d9bc;font-size:13px}.note strong{color:#ffe2a0}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:15px}.status-table{width:100%;border-collapse:collapse;min-width:540px;font-size:13px}.status-table th,.status-table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.status-table th{background:rgba(255,255,255,.045);color:#c8c3d0;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.status-table tr:last-child td{border-bottom:0}.status-table td:first-child{font-weight:700;color:#fff}.source-list{display:grid;gap:9px}.source{padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03)}.source a{font-weight:700}.source small{display:block;margin-top:3px;color:var(--muted)}.footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.btn{border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:10px 13px;background:#28232d;color:#fff;font:inherit;font-size:13px;cursor:pointer}.btn:hover{background:#39303e}.btn.primary{background:linear-gradient(90deg,#dc493f,#b34d78);border:0}.small{font-size:12px;color:var(--muted)}
+
+/* Telegram Mini App layer */
+:root{color-scheme:dark}
+body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+.appbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:rgba(13,13,18,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);margin:-26px -22px 18px}
+.appbar .brand{font-size:12px;letter-spacing:.08em}.appbar-actions{display:flex;gap:7px}.appicon{width:36px;height:36px;border:1px solid var(--line);border-radius:11px;background:var(--panel2);color:#fff;font-size:16px;cursor:pointer}
+.launch-screen{min-height:calc(100svh - 110px);display:flex;flex-direction:column;justify-content:center;padding:12px 0 28px}
+.launch-card{position:relative;overflow:hidden;padding:clamp(28px,6vw,58px);border:1px solid var(--line);border-radius:28px;background:radial-gradient(500px 300px at 90% 0%,rgba(255,125,67,.26),transparent 65%),radial-gradient(500px 350px at 0% 100%,rgba(153,104,255,.22),transparent 65%),linear-gradient(145deg,#21151e,#111118 70%);box-shadow:var(--shadow)}
+.launch-card:after{content:'MAX';position:absolute;right:-12px;bottom:-54px;font-size:clamp(130px,30vw,290px);font-weight:950;line-height:1;color:rgba(255,255,255,.045);letter-spacing:-.1em;pointer-events:none}
+.launch-card>*{position:relative;z-index:1}.launch-kicker{color:#ffad83;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.launch-card h1{font-size:clamp(43px,9vw,82px);line-height:.94;letter-spacing:-.065em;margin:20px 0}.launch-card h1 span{background:linear-gradient(90deg,#ff715e,#ffc16e 55%,#c3a4ff);background-clip:text;color:transparent}.launch-card p{max-width:650px;color:#d2ced9;font-size:clamp(15px,2vw,18px)}
+.launch-meta{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.launch-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:330px;padding:16px 20px;border:0;border-radius:14px;background:linear-gradient(100deg,#f04e43,#b64e83);color:white;font-weight:800;font-size:15px;cursor:pointer;box-shadow:0 10px 30px rgba(235,70,70,.22)}.launch-foot{margin-top:18px;color:var(--muted);font-size:11px}
+.article-view{display:none}.article-view.active{display:block}.launch-screen.hidden{display:none}.progress-track{height:3px;background:rgba(255,255,255,.08);position:fixed;top:0;left:0;right:0;z-index:30}.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#ff554b,#ffb36d,#ae8bff)}
+.back-to-top{position:fixed;right:17px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:15;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:#28232d;color:white;font-size:19px;box-shadow:var(--shadow);display:none}.back-to-top.show{display:block}
+.searchbox{width:100%;margin:0 0 18px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);font:inherit;outline:none}.searchbox:focus{border-color:#b58cff}.no-results{display:none;padding:18px;color:var(--muted);text-align:center}
+@media(max-width:820px){.appbar{margin:-26px -14px 16px;padding:9px 12px}.wrap{padding:20px 14px 54px}.launch-card{border-radius:22px}.toc{display:flex;flex-wrap:nowrap;overflow:auto;white-space:nowrap;scrollbar-width:none}.toc strong{display:none}.toc a{flex:0 0 auto}.hero{padding:30px 20px}.toolbar .btn{flex:1}}
+
+@media(max-width:820px){.layout{grid-template-columns:1fr}.toc{position:static;display:flex;gap:5px;flex-wrap:wrap}.toc strong{width:100%}.toc a{padding:6px 8px}.hero{padding:38px 25px}.cards{grid-template-columns:1fr}}
+@media print{body{background:#fff;color:#111}.hero,.toc,.card,.intro,.source{background:#fff;color:#111;box-shadow:none}.hero h1,.section h2,.card h3,.status-table td:first-child{color:#111}.lead,.card p,.section-desc,.intro,.source small,.footer{color:#444}.toc,.toolbar{display:none}.layout{display:block}.section{break-inside:avoid}.card{border:1px solid #ccc}.hero{border:1px solid #ccc}.hero:after{display:none}a{color:#9b2f27}}
+</style>
+</head>
+<body>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+<div class="wrap">
+  <div class="appbar"><div class="brand"><span class="adobe-mark">A</span> ADOBE MAX / 2026</div><div class="appbar-actions"><button class="appicon" id="shareBtn" aria-label="Поделиться">↗</button><button class="appicon" id="themeBtn" aria-label="Тема">◐</button></div></div>
+  <section class="launch-screen" id="launchScreen"><div class="launch-card"><div class="launch-kicker">✦ Interactive editorial · 11.11.2026</div><h1>ADOBE<br>MAX <span>2026</span></h1><p>Новая эра Creative Cloud. Большой интерактивный обзор главных анонсов Adobe: от Photoshop 28.0 и Firefly до AI-агентов и новых инструментов для видео.</p><div class="launch-meta"><span class="pill">12 тематических разделов</span><span class="pill">Статусы доступности</span><span class="pill">Официальные источники</span></div><button class="launch-cta" id="startReading">ЧИТАТЬ ПОЛНЫЙ ОБЗОР <span>↗</span></button><div class="launch-foot">Неофициальный редакционный обзор · Не связан с Adobe</div></div></section>
+  <div class="article-view" id="articleView">
+  <div class="topline"><div class="brand"><span class="adobe-mark">A</span> CREATIVE CLOUD / FIELD NOTES</div><div>ОБЗОР · 11 НОЯБРЯ 2026</div></div>
+  <header class="hero">
+    <div class="eyebrow"><span class="dot"></span> Adobe MAX 2026 · Official announcements</div>
+    <h1>Творчество выходит<br>на <span>новый уровень.</span></h1>
+    <p class="lead">Главные обновления Photoshop, Premiere, Lightroom, Illustrator, InDesign и Firefly. Плюс AI-агенты, новые рабочие процессы и инструменты для команд.</p>
+    <div class="meta"><span class="pill">✦ 10 ноября · основные анонсы</span><span class="pill">◉ Срез информации: 11.11.2026</span><span class="pill">↗ Ссылки на источники Adobe</span></div>
+    <div class="toolbar"><button class="btn primary" onclick="window.print()">Сохранить в PDF</button><button class="btn" onclick="document.getElementById('sources').scrollIntoView({behavior:'smooth'})">Официальные источники ↓</button></div>
+  </header>
+  <input class="searchbox" id="searchBox" type="search" placeholder="⌕  Найти функцию или приложение…" aria-label="Поиск по обзору">
+  <div class="layout">
+    <nav class="toc"><strong>В этом обзоре</strong>
+      <a href="#big-picture">Главная идея MAX</a><a href="#photoshop">Photoshop 28.0</a><a href="#premiere">Premiere</a><a href="#lightroom">Lightroom</a><a href="#illustrator">Illustrator</a><a href="#indesign">InDesign</a><a href="#agents">AI-агенты и MCP</a><a href="#firefly">Firefly</a><a href="#business">GenStudio и команды</a><a href="#topaz">Topaz Labs</a><a href="#availability">Доступность</a><a href="#sources">Источники</a>
+    </nav>
+    <main class="content">
+      <div class="intro"><strong>Главный вывод.</strong> Adobe двигает Creative Cloud от набора отдельных приложений к связанным AI-процессам: агент может взять на себя серию рутинных операций, а дизайнер или монтажёр сохраняет контроль над слоями, монтажом и финальными решениями. При этом часть самых эффектных новинок пока существует в Beta или Preview.</div>
+
+      <section class="section" id="big-picture">
+        <div class="section-head"><div><p class="section-kicker">01 / Big picture</p><h2>Что меняется в Adobe в целом</h2><p class="section-desc">Не просто новые кнопки, а новая логика работы между приложениями.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Adobe Creative Agent</h3><span class="status ga">Расширен</span></div><p>Агентная система расширяется на Premiere, Illustrator, InDesign, After Effects и Frame.io и помогает делегировать многошаговые рабочие процессы. Пользовательский AI Assistant, работающий на базе Creative Agent, пока находится в Beta; в Photoshop он доступен через Photoshop Beta.</p></article>
+          <article class="card"><div class="card-top"><h3>Локальные MCP-интеграции</h3><span class="status preview">Preview · 2027</span></div><p>Сторонние AI-агенты смогут обращаться к Photoshop, Illustrator, Premiere и After Effects и менять исходные проекты локально на компьютере. Слои, векторы, последовательности и композиции останутся редактируемыми. Private Beta ожидается в начале 2027 года.</p></article>
+          <article class="card"><div class="card-top"><h3>AI-модели и партнёры</h3><span class="status ga">Расширение платформы</span></div><p>Firefly объединяет модели Adobe и партнёров, включая Google, Kling, Runway, Luma, OpenAI, ByteDance и ElevenLabs. В отдельных инструментах можно выбирать модели под конкретную задачу.</p></article>
+          <article class="card"><div class="card-top"><h3>Больше работы внутри одного процесса</h3><span class="status ga">Стратегия Creative Cloud</span></div><p>Adobe стремится сократить переключение между приложениями: от идеи и генерации до редактирования, согласования и подготовки материалов к публикации.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="photoshop">
+        <div class="section-head"><div><p class="section-kicker">02 / Image editing</p><h2>Photoshop 28.0</h2><p class="section-desc">Самое заметное обновление для ретуши, композитинга и рекламного дизайна.</p></div><span class="pill">Ноябрь 2026</span></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Relight</h3><span class="status ga">В 28.0</span></div><p>Добавление и настройка источников света уже после съёмки. Можно менять направление, интенсивность, теплоту и мягкость света, а также добавлять новые источники, не переснимая кадр.</p></article>
+          <article class="card"><div class="card-top"><h3>Generative Restyle</h3><span class="status ga">В 28.0</span></div><p>Описываешь желаемое изменение через Prompt to Edit, превращаешь результат в отдельный слой и регулируешь силу эффекта ползунком. Не нужно каждый раз заново писать промпт.</p></article>
+          <article class="card"><div class="card-top"><h3>Remove Tool: related elements</h3><span class="status ga">В 28.0</span></div><p>Удаляет объект и связанные с ним следы в окружении: тени, отражения, рябь, отпечатки и похожие элементы. Это помогает чище восстанавливать фон.</p></article>
+          <article class="card"><div class="card-top"><h3>Quick Compare</h3><span class="status ga">В 28.0</span></div><p>Сравнение до/после через разделённый экран и ползунок прямо на холсте. Не приходится вручную скрывать и показывать слои.</p></article>
+          <article class="card"><div class="card-top"><h3>AI Assisted Editor</h3><span class="status ga">В 28.0</span></div><p>Упрощённый AI-first режим редактирования. Можно быстро описывать нужные изменения словами и в любой момент перейти в Pro Editor для точной работы со слоями и инструментами.</p></article>
+          <article class="card"><div class="card-top"><h3>Prompt to Edit</h3><span class="status ga">В 28.0</span></div><p>Редактирование всего изображения текстовыми инструкциями с предварительным просмотром нескольких вариантов. В релизе также отмечено обновление Firefly Upscaler 2 для увеличения изображений с сохранением лиц, текстур и мелких деталей.</p></article>
+          <article class="card"><div class="card-top"><h3>Generative Recompose</h3><span class="status beta">Photoshop Beta</span></div><p>Адаптация изображения под другие пропорции: например, из горизонтального формата в вертикальный или квадратный. AI переставляет объекты и достраивает фон, стараясь сохранить композиционную структуру.</p></article>
+          <article class="card"><div class="card-top"><h3>Mockups и Camera Angles</h3><span class="status beta">Photoshop Beta</span></div><p>Mockups помогает реалистично поместить изображение или дизайн на объект или поверхность. Camera Angles позволяет исследовать новые ракурсы всего изображения через управление прямо на холсте.</p></article>
+          <article class="card"><div class="card-top"><h3>Convert to Text Layers</h3><span class="status beta">Photoshop Beta</span></div><p>Извлекает текст из сведённого изображения и превращает его в полноценный редактируемый текстовый слой.</p></article>
+          <article class="card"><div class="card-top"><h3>Timelapse</h3><span class="status beta">Photoshop Beta</span></div><p>Записывает творческий процесс, чтобы его можно было сохранить и показать другим.</p></article>
+          <article class="card"><div class="card-top"><h3>Remove Ambient Effect Only</h3><span class="status beta">Photoshop Beta</span></div><p>Убирает атмосферные помехи вроде lens flare, дымки, отдельных теней или отражений, не удаляя сами объекты.</p></article>
+          <article class="card"><div class="card-top"><h3>Производительность и мелочи</h3><span class="status ga">В 28.0</span></div><p>Adobe заявляет об ускорении открытия и сохранения больших PSD/PSB благодаря многопоточному чтению и более эффективной записи. Обновлены панели параметров; можно копировать символьные стили между текстовыми блоками и задавать собственный placeholder-текст для разных языков.</p></article>
+        </div>
+        <div class="note"><strong>Важно:</strong> не путать Photoshop 28.0 с Photoshop Beta. Например, Mockups, Camera Angles, Timelapse и Convert to Text Layers Adobe перечисляет среди возможностей Beta. AI Assistant в Photoshop также обозначен как Beta.</div>
+      </section>
+
+      <section class="section" id="premiere">
+        <div class="section-head"><div><p class="section-kicker">03 / Video & audio</p><h2>Premiere Pro</h2><p class="section-desc">Монтаж, цвет, генерация видео и более глубокая работа со звуком прямо на таймлайне.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Color Mode</h3><span class="status ga">Доступно</span></div><p>Новая среда цветокоррекции, созданная вокруг видеокадра. Подходит и для быстрых поправок, и для более тонкой градации цвета.</p></article>
+          <article class="card"><div class="card-top"><h3>Generative Media Tool</h3><span class="status ga">Доступно</span></div><p>Генерация видео, звуковых эффектов, звуковых ландшафтов и музыки прямо на таймлайне. Можно создавать недостающий b-roll и звук с учётом контекста монтажа. Среди доступных моделей упоминаются Adobe Firefly, Google, Kling, Runway и Luma.</p></article>
+          <article class="card"><div class="card-top"><h3>Enhance Audio</h3><span class="status ga">Доступно</span></div><p>Разделяет аудиоисточники, чтобы независимо работать с диалогом, музыкой, атмосферой и эффектами.</p></article>
+          <article class="card"><div class="card-top"><h3>Separate Crosstalk</h3><span class="status ga">Доступно</span></div><p>Разделяет перекрывающиеся голоса собеседников на отдельные дорожки.</p></article>
+          <article class="card"><div class="card-top"><h3>Separate Sound Source</h3><span class="status ga">Доступно</span></div><p>Помогает очистить шумный диалог и разделить запись на отдельные звуковые элементы.</p></article>
+          <article class="card"><div class="card-top"><h3>Generative Remove</h3><span class="status beta">Beta</span></div><p>Удаляет лишние объекты из видео прямо на таймлайне. Нужно замаскировать и отследить объект, после чего Premiere восстанавливает область реалистичной детализацией.</p></article>
+          <article class="card full"><div class="card-top"><h3>Creative Agent в Premiere</h3><span class="status beta">AI Assistant · Beta</span></div><p>Агент может применить эффекты ко всем клипам последовательности, отслеживать замаскированные объекты по кадрам, а также корректировать цвет и экспозицию сразу для всей последовательности.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="lightroom">
+        <div class="section-head"><div><p class="section-kicker">04 / Photography</p><h2>Lightroom</h2><p class="section-desc">Меньше ручной ретуши и больше контроля над светом во время съёмки и после неё.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Glow</h3><span class="status ga">Доступно</span></div><p>Добавляет мягкое кинематографичное свечение. Есть варианты от лёгкой Diffusion до ретро-плёночной Halation, а интенсивность и распространение света можно настраивать.</p></article>
+          <article class="card"><div class="card-top"><h3>Blemish Removal</h3><span class="status ga">Доступно</span></div><p>Удаление несовершенств кожи одним нажатием с дополнительной тонкой настройкой. Adobe отдельно подчёркивает сохранение естественных особенностей кожи, например веснушек.</p></article>
+          <article class="card"><div class="card-top"><h3>Open Eyes</h3><span class="status beta">Public Beta</span></div><p>Исправляет закрытые глаза на групповом или портретном снимке, используя референсное фото человека из библиотеки. Можно выбрать референс самостоятельно или позволить инструменту найти его.</p></article>
+          <article class="card"><div class="card-top"><h3>Camera Tethering</h3><span class="status ga">Улучшено</span></div><p>Расширена работа с подключённой камерой в Lightroom Desktop и iPad: просмотр, организация и совместная работа во время съёмки.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="illustrator">
+        <div class="section-head"><div><p class="section-kicker">05 / Vector design</p><h2>Illustrator</h2><p class="section-desc">Больше гибкости в повседневной векторной работе.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Обновлённые библиотеки контента</h3><span class="status ga">Доступно</span></div><p>Новые кисти, графические стили, паттерны и градиенты, которые расширяют набор готовых материалов для дизайна.</p></article>
+          <article class="card"><div class="card-top"><h3>On-canvas Blend controls</h3><span class="status ga">Доступно</span></div><p>Новые элементы управления Blend прямо на холсте: постоянная панель настроек и live preview помогают быстрее настраивать переходы и смешивание объектов.</p></article>
+          <article class="card full"><div class="card-top"><h3>AI Assistant и MCP-сценарии</h3><span class="status beta">Beta / Preview</span></div><p>AI Assistant может выполнять многошаговые действия по текстовому запросу. В будущем сторонние MCP-агенты смогут обращаться к локальным Illustrator-файлам, при этом векторные объекты останутся редактируемыми.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="indesign">
+        <div class="section-head"><div><p class="section-kicker">06 / Editorial design</p><h2>InDesign</h2><p class="section-desc">Совместная работа над макетами и более адаптивная вёрстка.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Co-editing</h3><span class="status beta">Public Beta</span></div><p>Несколько дизайнеров могут одновременно работать над одним макетом в реальном времени.</p></article>
+          <article class="card"><div class="card-top"><h3>Flex Layout</h3><span class="status ga">Новая функция</span></div><p>Текстовые фреймы динамически меняют размер при изменении содержимого, помогая поддерживать аккуратную структуру макета.</p></article>
+          <article class="card"><div class="card-top"><h3>Check Document</h3><span class="status ga">Новая функция</span></div><p>Помогает находить распространённые проблемы документа, в том числе редакционные и связанные с доступностью.</p></article>
+          <article class="card"><div class="card-top"><h3>Rewrite</h3><span class="status ga">Новая функция</span></div><p>Помогает проверять и переписывать текст прямо в процессе работы над публикацией.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="agents">
+        <div class="section-head"><div><p class="section-kicker">07 / Agentic workflows</p><h2>AI-агенты и MCP</h2><p class="section-desc">Переход от генерации одного результата к управлению целой цепочкой задач.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>AI Assistant</h3><span class="status beta">Beta</span></div><p>В Premiere, Illustrator, InDesign, After Effects и Frame.io можно описывать задачу обычным языком и поручать агенту многошаговое выполнение в контексте проекта. Пользователь может вмешиваться и дорабатывать результат.</p></article>
+          <article class="card"><div class="card-top"><h3>Local MCP</h3><span class="status preview">Private Beta · 2027</span></div><p>Связка Creative Cloud с внешними агентами через MCP. Агент работает с нативными файлами на компьютере, а не только с экспортированными картинками. Adobe ожидает Private Beta в начале 2027 года.</p></article>
+          <article class="card full"><div class="card-top"><h3>Сквозные сценарии</h3><span class="status preview">Концепция интеграции</span></div><p>Пример от Adobe: агент получает бриф из Google Docs, правит проект в приложениях Creative Cloud, применяет изменение к другим материалам кампании и отправляет результат команде в Slack. Важная идея: рутинные изменения можно делегировать, но финальная творческая правка остаётся за человеком.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="firefly">
+        <div class="section-head"><div><p class="section-kicker">08 / AI creative studio</p><h2>Adobe Firefly</h2><p class="section-desc">Firefly превращается из генератора в единую среду для изображений, видео, звука, дизайна и повторяемых процессов.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Firefly AI Assistant / Creative Agent</h3><span class="status beta">Beta</span></div><p>Креативный партнёр, которым можно управлять словами. В числе новых возможностей заявлены настройка поведения, Plan Mode для планирования и Model Selector для выбора модели.</p></article>
+          <article class="card"><div class="card-top"><h3>Always-on Agents</h3><span class="status preview">Preview</span></div><p>Агенты для повторяющихся задач могут сортировать входящие материалы, проверять качество и готовить контент для разных каналов, продолжая работу в фоне.</p></article>
+          <article class="card"><div class="card-top"><h3>Firefly Video</h3><span class="status ga">Новые возможности</span></div><p>Единый процесс для построения истории и сборки видео из идеи и исходных материалов: от социального ролика до короткого фильма.</p></article>
+          <article class="card"><div class="card-top"><h3>Firefly Design</h3><span class="status beta">Beta</span></div><p>Единый холст для растровой и векторной графики, анимации, 3D и печатных материалов. Предусмотрены создание, совместная работа, клиентское ревью и экспорт.</p></article>
+          <article class="card"><div class="card-top"><h3>Firefly Image: Edit Object</h3><span class="status ga">Новый инструмент</span></div><p>Позволяет менять отдельную часть изображения, сохраняя остальную сцену. Вместе с Relight и Retouch сочетает промпты с ручным контролем.</p></article>
+          <article class="card"><div class="card-top"><h3>Quick Actions</h3><span class="status ga">Доступно</span></div><p>Галерея готовых быстрых сценариев: Remove Object, генератор миниатюр и пошаговый Build Product Ad для подготовки рекламного креатива.</p></article>
+          <article class="card"><div class="card-top"><h3>Firefly Graph</h3><span class="status beta">Beta</span></div><p>Нодовая среда для сборки собственных повторяемых AI-процессов из моделей и инструментов Adobe. Сценарии можно настраивать, переиспользовать и делиться ими с командой.</p></article>
+          <article class="card"><div class="card-top"><h3>Firefly Builder</h3><span class="status private">Private Beta</span></div><p>Преобразует идею в интерактивный прототип сайта, приложения, презентации или цифрового портфолио с помощью естественного языка. Затем элементы можно редактировать прямо на холсте.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="business">
+        <div class="section-head"><div><p class="section-kicker">09 / Enterprise</p><h2>GenStudio, Workfront и бренд-системы</h2><p class="section-desc">Новинки для маркетинговых команд и крупного производства контента.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>CX Enterprise Coworker в GenStudio</h3><span class="status ga">Анонс</span></div><p>Разговорный интерфейс для планирования, создания и запуска кампаний. Coworker координирует AI-агентов и рабочие процессы между командами.</p></article>
+          <article class="card"><div class="card-top"><h3>Adobe Brand Intelligence</h3><span class="status ga">Расширение</span></div><p>Система изучает и помогает соблюдать бренд-стандарты. Intelligent Reflow автоматически адаптирует дизайн под новые размеры и макеты; функция также направляется в Photoshop, Illustrator и InDesign.</p></article>
+          <article class="card"><div class="card-top"><h3>Ideation Space в Workfront</h3><span class="status ga">Новый инструмент</span></div><p>Совместный AI-холст для идей и планирования. Он собирает идеи команды, данные о результативности и контекст кампаний в более структурированный бриф.</p></article>
+          <article class="card"><div class="card-top"><h3>Firefly 3D Digital Twin</h3><span class="status ga">Расширение</span></div><p>Создаёт точные 3D-копии продуктов. Команды и агенты смогут менять этикетки и материалы, генерируя новые изображения товара без повторной физической фотосъёмки при каждом изменении.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="topaz">
+        <div class="section-head"><div><p class="section-kicker">10 / Image enhancement</p><h2>Topaz Labs: Wonder 4 и Image HDR</h2><p class="section-desc">Adobe отдельно представила две новые модели для улучшения изображений.</p></div></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><h3>Wonder 4</h3><span class="status ga">Новая модель</span></div><p>Объединяет апскейл, шумоподавление, устранение смаза и повышение резкости. Adobe описывает её как единый инструмент улучшения деталей изображения.</p></article>
+          <article class="card"><div class="card-top"><h3>Image HDR</h3><span class="status ga">Новая модель</span></div><p>Преобразует обычные изображения в HDR, расширяя яркость и помогая проявлять больше деталей.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="availability">
+        <div class="section-head"><div><p class="section-kicker">11 / Reality check</p><h2>Что уже работает, а что пока ждёт</h2><p class="section-desc">Статусы по официальным материалам Adobe. Для конкретной страны и тарифа фактическое появление может отличаться.</p></div></div>
+        <div class="table-wrap"><table class="status-table"><thead><tr><th>Статус</th><th>Что относится</th><th>Что это значит</th></tr></thead><tbody>
+          <tr><td><span class="status ga">Generally available</span></td><td>Основные функции Photoshop 28.0, Color Mode, новые аудиоинструменты и Generative Media в Premiere, Glow и Blemish Removal в Lightroom, инструменты Illustrator и другие обновления Creative Cloud.</td><td>Adobe объявила функции доступными. Наличие конкретного пункта зависит от приложения, региона, плана и поэтапного rollout.</td></tr>
+          <tr><td><span class="status beta">Public Beta / Beta</span></td><td>Open Eyes, InDesign Co-editing, Firefly Design, Firefly Graph, Photoshop Beta-инструменты, AI Assistant в поддерживаемых приложениях, Generative Remove в Premiere.</td><td>Тестовая версия. Поведение и доступность могут меняться.</td></tr>
+          <tr><td><span class="status preview">Preview</span></td><td>Always-on Agents и локальные MCP-интеграции.</td><td>Предварительный показ. MCP Private Beta ожидается в начале 2027 года.</td></tr>
+          <tr><td><span class="status private">Private Beta</span></td><td>Firefly Builder.</td><td>Ограниченное тестирование, не публичный релиз для всех пользователей.</td></tr>
+        </tbody></table></div>
+        <div class="note"><strong>Редакторская оговорка:</strong> это обзор главных функций из официальных материалов Adobe, опубликованных к 11 ноября 2026 года. Он не включает каждую сессию конференции, выступление партнёров или отдельные демонстрации MAX Sneaks. Анонс не всегда означает, что функция уже появилась в каждом аккаунте.</div>
+      </section>
+
+      <section class="section" id="sources">
+        <div class="section-head"><div><p class="section-kicker">12 / Source desk</p><h2>Официальные источники</h2><p class="section-desc">Ссылки ведут на первичные материалы Adobe и справку Telegram.</p></div></div>
+        <div class="source-list">
+          <div class="source"><a href="https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools" target="_blank" rel="noopener">Adobe Newsroom · Creative Cloud updates at MAX 2026</a><small>Главный пресс-релиз: Photoshop, Premiere, Lightroom, Illustrator, InDesign, AI-агенты и Topaz.</small></div>
+          <div class="source"><a href="https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity" target="_blank" rel="noopener">Adobe Newsroom · New era of creativity</a><small>Firefly, MCP, AI-модели, GenStudio, Workfront и партнёрства.</small></div>
+          <div class="source"><a href="https://news.adobe.com/news/2026/11/adobe-firefly-expands" target="_blank" rel="noopener">Adobe Newsroom · Firefly expands as AI creative studio</a><small>Новые инструменты Firefly и агентные возможности.</small></div>
+          <div class="source"><a href="https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control" target="_blank" rel="noopener">Adobe Blog · Full Creative Cloud feature tour</a><small>Подробные описания функций по приложениям.</small></div>
+          <div class="source"><a href="https://helpx.adobe.com/si/photoshop/desktop/whats-new/photoshop-on-desktop-release-notes.html" target="_blank" rel="noopener">Photoshop 28.0 · Official release notes</a><small>Точный список обновлений и изменений версии Photoshop 28.0.</small></div>
+          <div class="source"><a href="https://telegram.org/faq" target="_blank" rel="noopener">Telegram FAQ · Rich text editor</a><small>Встроенный редактор длинных публикаций Telegram Premium: до 32 768 символов, заголовки, таблицы, списки, код и медиа.</small></div>
+        </div>
+      </section>
+      <footer class="footer"><span>ADOBE MAX 2026 / RECAP</span><span>Подготовлено по официальным материалам на 11.11.2026</span><span>Неофициальный обзор · не связан с Adobe</span></footer>
+    </main>
+  </div>
+</div>
+</div>
+<button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+<script>
+(function(){
+ const tg=window.Telegram?.WebApp;
+ if(tg){tg.ready();tg.expand();try{tg.setHeaderColor('#0d0d12');tg.setBackgroundColor('#0d0d12');}catch(e){}}
+ const launch=document.getElementById('launchScreen'), article=document.getElementById('articleView');
+ const start=document.getElementById('startReading'), back=document.getElementById('backToTop');
+ function openArticle(){launch.classList.add('hidden');article.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(tg?.BackButton){tg.BackButton.show();tg.BackButton.onClick(()=>showCover());}tg?.HapticFeedback?.impactOccurred('light');}
+ function showCover(){article.classList.remove('active');launch.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});if(tg?.BackButton)tg.BackButton.hide();}
+ start.addEventListener('click',openArticle);
+ document.getElementById('shareBtn').addEventListener('click',()=>{if(tg?.switchInlineQuery){tg.switchInlineQuery('Adobe MAX 2026 · Главные новинки');}else if(navigator.share){navigator.share({title:document.title,url:location.href}).catch(()=>{});}else{navigator.clipboard?.writeText(location.href);}});
+ document.getElementById('themeBtn').addEventListener('click',()=>{document.body.classList.toggle('light-mode');tg?.HapticFeedback?.selectionChanged();});
+ const style=document.createElement('style');style.textContent='.light-mode{--bg:#f4f2f7;--panel:#fff;--panel2:#eeeaf2;--text:#211d27;--muted:#686272;--line:rgba(20,10,30,.13);background:#f4f2f7!important;color:#211d27!important}.light-mode .card,.light-mode .toc,.light-mode .intro,.light-mode .source{background:#fff;color:#211d27}.light-mode .card p,.light-mode .intro,.light-mode .toc a{color:#514b59}.light-mode .section h2,.light-mode .card h3,.light-mode .status-table td:first-child{color:#211d27}.light-mode .appbar{background:rgba(244,242,247,.9)}';document.head.appendChild(style);
+ const search=document.getElementById('searchBox');search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let visible=0;document.querySelectorAll('.card').forEach(c=>{const yes=!q||c.innerText.toLowerCase().includes(q);c.style.display=yes?'':'none';if(yes)visible++;});document.querySelectorAll('.section').forEach(sec=>{const cards=[...sec.querySelectorAll('.card')];if(cards.length)sec.style.display=cards.some(c=>c.style.display!=='none')?'':'none';});});
+ window.addEventListener('scroll',()=>{const doc=document.documentElement;const max=doc.scrollHeight-innerHeight;document.getElementById('progressFill').style.width=(max>0?scrollY/max*100:0)+'%';back.classList.toggle('show',scrollY>500);});back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+})();
+</script>
+</body>
+</html>
